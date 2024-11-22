@@ -1,29 +1,72 @@
 .section-display {
     display: flex;
+    margin-bottom: 10rem;
+
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        &.right-text-content {
+            flex-direction: row-reverse;
+            .illustration{
+                padding-right: 5rem;
+            }
+        }
+        
+        &.left-text-content {
+            flex-direction: row;
+            .illustration{
+                padding-left: 5rem;
+            }
+        }
+    }
+
     .text-content {
         flex: 1;
         .title {
+            font-size: 30px;
+            @media screen and (min-width: 768px) {
             font-size: 70px;
+            }
             line-height: 1.1px;
             font-weight: 700;
         }
         .paragraph {
-            font-size: 20px;
+            font-size: 15px;
+            @media screen and (min-width: 768px) {
+            font-size: 30px;
             line-height: 40px;
+            }
         }
 
     }
 
     .illustration {
+
+        margin-top: 50px;
         img {
-        max-width: 100%;
+        max-width: 80%;
         display: block;
         margin: auto;
         }   
     }
     
+}
 
-    .action-div {
-
+.competences-icons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 30px;
+    @media screen and (min-width: 768px) {
+    gap: 30px;
+    font-size: 45px;
+    }
+    i{
+        transition: 0.3s all ease;
+        &:hover{
+            cursor: pointer;
+            color: $secondary;
+            transform: scale(1.2);
+        }
     }
 }
