@@ -9,12 +9,33 @@
 </head>
 <body>
   <header class="header-website">
-    HEADER
+    <nav class="navbar">
+      <div class="logo">
+        <!--<img src="" alt=""> -->
+        <span class="logo-text">Isabelle Burgos</span>
+      </div>
+      <div class="menu">
+        <label class="btn btn-secondary menu-input-label" for="menu-toggle"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" id="menu-toggle" class="menu-input">
+        <div class="dropdown-menu">
+          <ul class="nav-links">
+            <li class="nav-link">
+              <a href="#accueil">Accueil</a>
+            </li>
+            <li class="nav-link">
+              <a href="#competences">Compétences</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </nav>
   </header>
   
   <main>
 
-    <section class="section-display left-text-content">
+    <section class="section-display left-text-content" id="accueil">
       <div class="text">
         <article class="text-content">
           <h1 class="title">Isabelle Burgos</h1>
@@ -38,7 +59,7 @@
 
     </section>
 
-    <section class="section-display right-text-content">
+    <section class="section-display right-text-content" id="competences">
       <div class="text">
         <article class="text-content">
           <h2 class="title">Mes compétences</h1>
